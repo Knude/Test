@@ -3,7 +3,7 @@ import theme from "theme";
 import { Theme, Link, Strong, Text, Button, Icon, Box, Image } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
-import { Override, StackItem, Stack, Section, SocialMedia } from "@quarkly/components";
+import { Override, StackItem, Stack, Section } from "@quarkly/components";
 import { MdHelp } from "react-icons/md";
 export default (() => {
 	return <Theme theme={theme}>
@@ -47,7 +47,7 @@ export default (() => {
 				</StackItem>
 				<StackItem width="50%" display="block" quarkly-title="Menu" md-width="25%">
 					<Override slot="StackItemContent" align-items="center" justify-content="center" md-justify-content="flex-end" />
-					{"        "}{"    "}
+					{"            "}
 				</StackItem>
 				<StackItem display="flex" quarkly-title="Side" width="25%" md-display="none">
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-end" />
@@ -78,7 +78,7 @@ export default (() => {
 				</StackItem>
 				<StackItem width="50%" display="block" quarkly-title="Menu" md-width="25%">
 					<Override slot="StackItemContent" align-items="center" justify-content="center" md-justify-content="flex-end" />
-					{"        "}{"    "}
+					{"            "}
 				</StackItem>
 				{"    "}
 			</Stack>
@@ -137,13 +137,12 @@ export default (() => {
 		<Section padding="100px 0" sm-padding="40px 0">
 			<Override slot="SectionContent" align-items="center" />
 			<Text as="h2" font="--headline2" md-font="--headline2" margin="20px 0 0 0">
-				PROFESSIONEL, PASSIONERET, PERSONLIG{"\n\n"}
+				PROFESSIONEL, PASSIONERET, PERSONLIG
 			</Text>
 			<Text as="p" font="--lead" margin="20px 0 0 0" text-align="center">
 				Hi! I'm a paragraph. Click here to add your own text and edit me. It’s a piece of cake. I’m a great space for you to tell a story and let your site visitors know more about you. Talk about your business and what products and services you offer. Share how you came up with the idea for your company and what makes you different from your competitors. Make your business stand out and show your visitors who you are.
 				<br />
 				<br />
-				{"\n"}
 				<Strong
 					data-q-widget-type="PRIMITIVE"
 					overflow-wrap="normal"
@@ -164,10 +163,9 @@ export default (() => {
 				<br />
 				• Afslappet og hyggelig atmosfære
 				<br />
-				• Nærvær, grundighed og god tid{"\n\n"}
+				• Nærvær, grundighed og god tid
 				<br />
 				<br />
-				{"\n\n"}
 			</Text>
 			<StackItem display="flex" quarkly-title="Side" width="25%" md-display="none">
 				<Override slot="StackItemContent" align-items="center" justify-content="flex-end" />
@@ -231,29 +229,29 @@ export default (() => {
 					Lukket{" "}
 					<br />
 					<Strong>
-						Tirsdag{"\n"}
+						Tirsdag
 					</Strong>
-					10.00-17.00{"\n\n"}
+					10.00-17.00
 					<br />
 					<Strong>
-						Onsdag{" \n"}
+						Onsdag{" "}
 					</Strong>
-					10.00-17.00{"\n\n"}
+					10.00-17.00
 					<br />
 					<Strong>
-						Torsdag{" \n"}
+						Torsdag{" "}
 					</Strong>
-					10.00-17.00{"\n\n"}
+					10.00-17.00
 					<br />
 					<Strong>
-						Fredag{" \n"}
+						Fredag{" "}
 					</Strong>
-					10.00-17.00{"\n\n"}
+					10.00-17.00
 					<br />
 					<Strong>
-						Lørdag{" \n"}
+						Lørdag{" "}
 					</Strong>
-					10.00-17.00{"\n\n"}
+					10.00-17.00
 					<br />
 					<Strong>
 						Søndag{"  "}
@@ -340,7 +338,7 @@ export default (() => {
 					<Override slot="StackItemContent" align-items="center" />
 					<Image width="28px" height="28px" src="https://uploads.quarkly.io/5f44d0da669357001e60ed14/images/default-website-quarkly-logo-grey.svg?v=2020-11-06T17:24:35.270Z" />
 					<Link
-						href="https://quarkly.io/"
+						href="https://karinarahr.dk/"
 						font="--base"
 						color="--dark"
 						opacity="0.6"
@@ -350,16 +348,12 @@ export default (() => {
 						hover-text-decoration-line="underline"
 						white-space="nowrap"
 					>
-						Made on Quarkly
+						Karina Rahr @ 2021
 					</Link>
 					{"        "}
 				</StackItem>
 				<StackItem display="flex" quarkly-title="Side" width="75%" md-width="50%">
 					<Override slot="StackItemContent" align-items="center" justify-content="flex-end" />
-					<SocialMedia facebook="https://www.facebook.com/quarklyapp/" twitter="https://twitter.com/quarklyapp" youtube="https://www.youtube.com/channel/UCK5bXs2L0bbSMQ82BQ3hIkw">
-						<Override slot="link" background="none" border-radius="50%" />
-						<Override slot="icon" color="--dark" />
-					</SocialMedia>
 					{"   "}
 				</StackItem>
 				{"    "}
