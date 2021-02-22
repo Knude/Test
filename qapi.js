@@ -83,6 +83,9 @@ export default {
 	"projectType": "gatsby",
 	"site": {
 		"styles": {},
-		"seo": {}
+		"seo": {
+			"description": "Frisør Karina Rahr. For en professional og personlig klipning i dit hjem. Jeg kommer ud til dig når det passer dig. Nem bookning.\n",
+			"title": "Frisør Karina Rahr  -  Bliv klippet i trygge rammer"
+		}
 	}
 }

@@ -11,9 +11,9 @@ export default (() => {
 		<GlobalQuarklyPageStyles pageUrl={"404"} />
 		<Helmet>
 			<title>
-				Quarkly export
+				Frisør Karina Rahr  -  Bliv klippet i trygge rammer
 			</title>
-			<meta name={"description"} content={"Web site created using quarkly.io"} />
+			<meta name={"description"} content={"Frisør Karina Rahr. For en professional og personlig klipning i dit hjem. Jeg kommer ud til dig når det passer dig. Nem bookning.\n"} />
 			<link rel={"shortcut icon"} href={"https://uploads.quarkly.io/readme/cra/favicon-32x32.ico"} type={"image/x-icon"} />
 		</Helmet>
 		<Section margin="0 0 0 0" padding="16px 0px 16px 0px" box-sizing="border-box" quarkly-title="Header">
