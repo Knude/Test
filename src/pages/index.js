@@ -69,6 +69,19 @@ export default (() => {
 				</StackItem>
 				{"    "}
 			</Stack>
+			<Stack>
+				{"    "}
+				<StackItem display="flex" quarkly-title="Logo" md-width="75%" width="25%">
+					<Override slot="StackItemContent" align-items="center" />
+					{"        "}
+					<Link href="/" position="relative" transition="opacity 200ms ease" quarkly-title="Link" />
+				</StackItem>
+				<StackItem width="50%" display="block" quarkly-title="Menu" md-width="25%">
+					<Override slot="StackItemContent" align-items="center" justify-content="center" md-justify-content="flex-end" />
+					{"        "}{"    "}
+				</StackItem>
+				{"    "}
+			</Stack>
 		</Section>
 		<Section
 			padding="25px 0 75px 0"
@@ -131,7 +144,15 @@ export default (() => {
 				<br />
 				<br />
 				{"\n"}
-				<Strong>
+				<Strong
+					data-q-widget-type="PRIMITIVE"
+					overflow-wrap="normal"
+					word-break="normal"
+					white-space="normal"
+					text-indent="0"
+					text-overflow="clip"
+					hyphens="manual"
+				>
 					Hos mig får du:
 				</Strong>
 				<br />
@@ -148,9 +169,33 @@ export default (() => {
 				<br />
 				{"\n\n"}
 			</Text>
+			<StackItem display="flex" quarkly-title="Side" width="25%" md-display="none">
+				<Override slot="StackItemContent" align-items="center" justify-content="flex-end" />
+				{"   "}
+			</StackItem>
+			<Button
+				padding="8px 18px 8px 18px"
+				font="--base"
+				letter-spacing="0.5px"
+				z-index="5"
+				background="--color-primary"
+				md-display="none"
+				white-space="nowrap"
+				border-radius="0px"
+				hover-transform="translateY(-4px)"
+				transition="transform --transitionDuration-fast --transitionTimingFunction-easeInOut 0s"
+			>
+				Bestil tid
+			</Button>
 		</Section>
 		<Section color="--dark">
-			<Text as="h2" font="--headline1" md-font="--headline2" margin="20px 0 0 0">
+			<Text
+				as="h2"
+				font="--headline1"
+				md-font="--headline2"
+				margin="20px 0 0 0"
+				text-align="center"
+			>
 				Spørgmål?
 			</Text>
 			<Box
@@ -245,7 +290,7 @@ export default (() => {
 					icon={MdHelp}
 				/>
 				<Text as="h3" font="--headline3" margin="10px 0">
-					How much salt is in the ocean?
+					Hvor kører jeg til?
 				</Text>
 				<Text as="p" font="--lead" margin="10px 0" color="--greyD2">
 					It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more. Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference.
@@ -268,7 +313,7 @@ export default (() => {
 					icon={MdHelp}
 				/>
 				<Text as="h3" font="--headline3" margin="10px 0">
-					Why is the sky blue?
+					Hvorfor en kørende frisør?
 				</Text>
 				<Text as="p" font="--lead" margin="10px 0" color="--greyD2">
 					It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more. Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference.
