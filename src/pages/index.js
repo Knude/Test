@@ -1,11 +1,11 @@
 import React from "react";
 import theme from "theme";
-import { Theme, Link, Image, Button, Text } from "@quarkly/widgets";
+import { Theme, Link, Image, Button, Text, Strong, Icon, Box } from "@quarkly/widgets";
 import { Helmet } from "react-helmet";
 import { GlobalQuarklyPageStyles } from "global-page-styles";
 import { Override, StackItem, Stack, Section, SocialMedia } from "@quarkly/components";
 import * as Components from "components";
-import { MdMenu } from "react-icons/md";
+import { MdMenu, MdHelp } from "react-icons/md";
 export default (() => {
 	return <Theme theme={theme}>
 		<GlobalQuarklyPageStyles pageUrl={"index"} />
@@ -165,7 +165,7 @@ export default (() => {
 				Karina Rahr
 			</Text>
 			<Text
-				font="--lead"
+				font="--headline3"
 				color="--light"
 				margin="10px 0px 35px 0px"
 				sm-text-align="center"
@@ -173,190 +173,162 @@ export default (() => {
 				opacity="0.7"
 				md-text-align="center"
 			>
-				Professionel kørende frisør
+				Bliv klippet efter dit skema
 			</Text>
 		</Section>
-		<Section
-			padding="90px 0px 100px 0px"
-			sm-padding="24px 0 24px 0"
-			quarkly-title="FAQ"
-			background="--color-lightD1"
-			border-color="--color-lightD2"
-			border-style="solid"
-			border-width="1px 0px 1px 0px"
-			box-sizing="border-box"
-			lg-padding="50px 30px 50px 30px"
-			justify-content="center"
-		>
-			<Override
-				slot="SectionContent"
-				align-items="center"
-				margin="0px 48px 0px 48px"
-				width="100%"
-				md-margin="0px 16px 0px 16px"
-				min-width="auto"
-			/>
-			<Text
-				font="--base"
-				margin="0px 0px 10px 0px"
-				letter-spacing="1px"
-				color="--dark"
-				opacity="0.6"
-				text-align="center"
-				text-transform="uppercase"
-				lg-text-align="center"
-				lg-margin="0px 0px 6px 0px"
-				quarkly-title="Title"
-			>
-				hvordan fungerer det?
+		<Section padding="100px 0" sm-padding="40px 0">
+			<Override slot="SectionContent" align-items="center" />
+			<Text as="h2" font="--headline2" md-font="--headline2" margin="20px 0 0 0">
+				PROFESSIONEL, PASSIONERET, PERSONLIG{"\n\n"}
 			</Text>
-			<Text
-				font="--headline2"
-				margin="0px 0px 64px 0px"
-				color="--dark"
-				text-align="center"
-				lg-text-align="center"
-				lg-margin="0px 0px 36px 0px"
-				sm-font="--headline3"
-				md-font="--headline3"
-			>
-				FAQ
+			<Text as="p" font="--lead" margin="20px 0 0 0" text-align="center">
+				Hi! I'm a paragraph. Click here to add your own text and edit me. It’s a piece of cake. I’m a great space for you to tell a story and let your site visitors know more about you. Talk about your business and what products and services you offer. Share how you came up with the idea for your company and what makes you different from your competitors. Make your business stand out and show your visitors who you are.
+				<br />
+				<br />
+				{"\n"}
+				<Strong>
+					Hos mig får du:
+				</Strong>
+				<br />
+				• Professionel og personlig rådgivning
+				<br />
+				• En behandling som passer til dig og din livsstil
+				<br />
+				• En behandling med bæredygtige produkter
+				<br />
+				• Afslappet og hyggelig atmosfære
+				<br />
+				• Nærvær, grundighed og god tid{"\n\n"}
+				<br />
+				<br />
+				{"\n\n"}
 			</Text>
-			<Stack>
-				{"    "}
-				<StackItem
-					width="25%"
-					display="flex"
-					padding="16px 16px 16px 16px"
-					margin="0px 0px 0px 0px"
-					lg-width="50%"
-					lg-align-items="center"
-					lg-justify-content="center"
-					md-width="100%"
+		</Section>
+		<Section color="--dark">
+			<Text as="h2" font="--headline1" md-font="--headline2" margin="20px 0 0 0">
+				Spørgmål?
+			</Text>
+			<Box
+				margin="36px 0 0 0"
+				padding="0 0 0 54px"
+				sm-padding="54px 0 0 0"
+				position="relative"
+				max-width="800px"
+			>
+				<Icon
+					position="absolute"
+					top="0"
+					left="0"
+					size="36px"
+					color="--primary"
+					category="md"
+					icon={MdHelp}
+				/>
+				<Text as="h3" font="--headline3" margin="10px 0">
+					Hvornår kører jeg ud?
+				</Text>
+				<Text
+					as="p"
+					font="normal 300 20px/1.5 --fontFamily-sans"
+					margin="10px 0"
+					color="--greyD2"
+					text-align="center"
+					width="1150px"
 				>
-					<Override slot="StackItemContent" flex-direction="column" lg-align-items="center" md-align-items="flex-start" />
-					{"        "}
-					<Text
-						font="--lead"
-						margin="0px 0px 0px 0px"
-						color="--dark"
-						text-align="center"
-						md-text-align="left"
-					>
-						Have any questions?
-					</Text>
-					<Text
-						font="--base"
-						color="--darkL2"
-						opacity="0.6"
-						lg-text-align="center"
-						text-align="center"
-						margin="16px 0px 0px 0px"
-						md-text-align="left"
-						sm-margin="8px 0px 0px 0px"
-					>
-						It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something bigger.
-					</Text>
-					{"    "}
-				</StackItem>
-				<StackItem
-					width="25%"
-					display="flex"
-					padding="16px 45px 16px 16px"
-					lg-width="50%"
-					md-width="100%"
-				>
-					<Override slot="StackItemContent" flex-direction="column" lg-align-items="center" md-align-items="flex-start" />
-					{"        "}
-					<Text
-						font="--lead"
-						margin="0px 0px 0px 0px"
-						color="--dark"
-						text-align="center"
-						md-text-align="left"
-					>
-						Have any questions?
-					</Text>
-					<Text
-						font="--base"
-						color="--darkL2"
-						opacity="0.6"
-						lg-text-align="center"
-						text-align="center"
-						margin="16px 0px 0px 0px"
-						md-text-align="left"
-						sm-margin="8px 0px 0px 0px"
-					>
-						It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something bigger.
-					</Text>
-					{"    "}
-				</StackItem>
-				<StackItem width="25%" display="flex" lg-width="50%" md-width="100%">
-					<Override
-						slot="StackItemContent"
-						flex-direction="column"
-						lg-width="100%"
-						lg-align-items="center"
-						md-align-items="flex-start"
-					/>
-					{"        "}
-					<Text
-						font="--lead"
-						margin="0px 0px 0px 0px"
-						color="--dark"
-						text-align="center"
-						md-text-align="left"
-					>
-						Have any questions?
-					</Text>
-					<Text
-						font="--base"
-						color="--darkL2"
-						opacity="0.6"
-						lg-text-align="center"
-						text-align="center"
-						margin="16px 0px 0px 0px"
-						md-text-align="left"
-						sm-margin="8px 0px 0px 0px"
-					>
-						It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something bigger.
-					</Text>
-					{"    "}
-				</StackItem>
-				<StackItem width="25%" display="flex" lg-width="50%" md-width="100%">
-					<Override
-						slot="StackItemContent"
-						flex-direction="column"
-						lg-width="100%"
-						lg-align-items="center"
-						md-align-items="flex-start"
-					/>
-					{"        "}
-					<Text
-						font="--lead"
-						margin="0px 0px 0px 0px"
-						color="--dark"
-						text-align="center"
-						md-text-align="left"
-					>
-						Have any questions?
-					</Text>
-					<Text
-						font="--base"
-						color="--darkL2"
-						opacity="0.6"
-						lg-text-align="center"
-						text-align="center"
-						margin="16px 0px 0px 0px"
-						md-text-align="left"
-						sm-margin="8px 0px 0px 0px"
-					>
-						It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something bigger.
-					</Text>
-					{"    "}
-				</StackItem>
-				{"    "}
-			</Stack>
+					<Strong>
+						Mandag{" "}
+					</Strong>
+					Lukket{" "}
+					<br />
+					<Strong>
+						Tirsdag{"\n"}
+					</Strong>
+					10.00-17.00{"\n\n"}
+					<br />
+					<Strong>
+						Onsdag{" \n"}
+					</Strong>
+					10.00-17.00{"\n\n"}
+					<br />
+					<Strong>
+						Torsdag{" \n"}
+					</Strong>
+					10.00-17.00{"\n\n"}
+					<br />
+					<Strong>
+						Fredag{" \n"}
+					</Strong>
+					10.00-17.00{"\n\n"}
+					<br />
+					<Strong>
+						Lørdag{" \n"}
+					</Strong>
+					10.00-17.00{"\n\n"}
+					<br />
+					<Strong>
+						Søndag{"  "}
+					</Strong>
+					Lukket
+					<br />
+					<br />
+					<Strong>
+						Hveranden lørdag lukket.
+						<br />
+					</Strong>
+					<br />
+					<Strong>
+						Tider efter 17.00/19.00
+						<br />
+					</Strong>
+					Ring +45 XXXXXXXX
+				</Text>
+			</Box>
+			<Box
+				margin="36px 0 0 0"
+				padding="0 0 0 54px"
+				sm-padding="54px 0 0 0"
+				position="relative"
+				max-width="800px"
+			>
+				<Icon
+					position="absolute"
+					top="0"
+					left="0"
+					size="36px"
+					color="--primary"
+					category="md"
+					icon={MdHelp}
+				/>
+				<Text as="h3" font="--headline3" margin="10px 0">
+					How much salt is in the ocean?
+				</Text>
+				<Text as="p" font="--lead" margin="10px 0" color="--greyD2">
+					It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more. Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference.
+				</Text>
+			</Box>
+			<Box
+				margin="36px 0"
+				padding="0 0 0 54px"
+				sm-padding="54px 0 0 0"
+				position="relative"
+				max-width="800px"
+			>
+				<Icon
+					position="absolute"
+					top="0"
+					left="0"
+					size="36px"
+					color="--primary"
+					category="md"
+					icon={MdHelp}
+				/>
+				<Text as="h3" font="--headline3" margin="10px 0">
+					Why is the sky blue?
+				</Text>
+				<Text as="p" font="--lead" margin="10px 0" color="--greyD2">
+					It all begins with an idea. Maybe you want to launch a business. Maybe you want to turn a hobby into something more. Or maybe you have a creative project to share with the world. Whatever it is, the way you tell your story online can make all the difference.
+				</Text>
+			</Box>
 		</Section>
 		<Section
 			margin="0 0 0 0"
